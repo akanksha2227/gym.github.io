@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrestler's gym</title>
+    
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    /css reset/
+    body{
+        font-family: 'Playball', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img.jpg);
+    }
+    .left {
+        display: inline-block;
+        /border: 2px solid red;/
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .left img{
+        width: 175px;
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /border: 2px solid green;/
+    }
+    .right{
+        display: inline-block;
+        /border: 2px solid yellow;/
+        position: absolute;
+        right: 34px;
+        top: 20px;
+
+
+    }
+    .btn{
+        margin: 0px 9 px;
+        background-color: black;
+        color: white;
+        padding: 14px 20px;
+        /border: 2px solid grey;/
+        /border-radius: 10px;/
+        font-size: 20px;
+        cursor: pointer;
+        font-family:'Playball', cursive ;
+    }
+    .btn:hover{
+        background-color: red;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+       text-decoration: none;
+        padding: 30px 24px;
+        
+    }
+    .navbar li a:hover, .navbar li a.active{
+       text-decoration: underline;
+       color: grey;
+    }
+  .left div{
+      text-align: center;
+
+  }
+  .container{
+      /border: 2px solid red;/
+      margin: 129px 145px;
+    padding: 24px 122px;
+    width: 33%;
+      border-radius: 24px;
+  }
+ .container  button{
+    
+     width: 84%;
+     margin: 28px 50px;
+     font-family: 'Playball', cursive;
+     
+ }
+ .form-group{
+     display: block;
+    /* border: 2px solid black;*/
+     margin: 10px auto;
+     padding-left: 1px;
+     padding-right: 1px;
+     padding-top: 2px;
+     padding-bottom: 2px;
+    /* border-radius: 24px;*/
+     text-align: center;
+     width: 75%;
+     font-size: 20px;
+     font-family: 'Playball', cursive;
+     font-size: large;
+ }
+ .container h1{
+     text-align: center;
+ }
+
+</style>
+<body>
+    <header class="header">
+        <!----left box for logo--->
+        <div class="left">
+<!--<img src="imgs/dumb.jpg" alt="">-->
+<div>Wrestler's gym</div>
+        </div>
+        <!--right box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">HOME</a></li>
+                <li><a href="#" class="active">ABOUT US</a></li>
+                <li> <a href="#" class="active">GYM CALCULATOR</a></li>
+                <li> <a href="#" class="active">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Visit us</button>
+           
+    </header>
+    <div class="container">
+        <h1>Join the best gym of prayagraj now!</h1>
+       <form action="noaction.php">
+           <div class="form-group">
+               <input type="text" name="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+       </form>
+        
+    </div>
+</body>
+</html>
